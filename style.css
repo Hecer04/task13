@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.kaspi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 22px;
+}
+.caspi1{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+.caspi1 .xezer{
+    background: orange;
+}
+.caspi2{
+    width: 100%;
+    height: 300px;
+}
+.caspi2 .xezer{
+    background: yellow;
+    width: 100%;
+    height: 100%;
+}
+.caspi3{
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+.caspi3 .xezer{
+    background: blue;
+}
+.caspi4{
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+.caspi4 .xezer{
+    background: gray;
+}
+@media(max-width: 768px){
+    .caspi1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .caspi2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .caspi3{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 320px){
+    .caspi4{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
